@@ -1,3 +1,5 @@
+#this is forked from Bureado. Modified for Mooncake
+
 # aad-login
 
 Allows Linux user authentication to Azure AD via pam_exec
@@ -15,10 +17,7 @@ This utility doesn't provision the user. In other words, you need to ensure the 
 you'll be logging in with is visible by NSS. A simple `sudo useradd -m <user>` might
 be enough for a handful of users.
 
-An exception of this would be the `aad-login-self-provisioning` script which attempts
-to create the user upon a failed `getent`. This is experimental. Ideally you are doing
-this to delegate management of your Linux VMs and therefore will be using groups (like
-`sudo`) to delegate requiring you to provision the user beforehand.
+Don't forget to add sudoer list and default profile for your new user
 
 ## Installing
 
