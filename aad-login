@@ -9,5 +9,5 @@
 #   auth sufficient pam_exec.so expose_authtok /usr/local/bin/aad-login
 
 read password
-node /opt/aad-login/aad-login.js $PAM_USER $password
+nodejs /opt/aad-login/aad-login.js $PAM_USER $password
 exit $?
