@@ -20,7 +20,7 @@ var password = process.argv[3];
 if (username && password) {
   request = {
     tenant : directory,
-    authorityHostUrl : 'https://login.windows.net',
+    authorityHostUrl : 'https://login.chinacloudapi.cn',
     clientId : clientid,
     username : username + '@' + directory,
     password : password
